@@ -46,35 +46,39 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DynamicControls.cs">
+    <Compile Include="Forms\DynamicControls.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DynamicControls.Designer.cs">
+    <Compile Include="Forms\DynamicControls.Designer.cs">
       <DependentUpon>DynamicControls.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forms\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="IPizza.cs" />
-    <Compile Include="MyUserControl.cs">
+    <Compile Include="Interfaces\IPizza.cs" />
+    <Compile Include="Interfaces\IPizzaRepo.cs" />
+    <Compile Include="Interfaces\IShoppingCart.cs" />
+    <Compile Include="User Controls\MyUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="MyUserControl.Designer.cs">
+    <Compile Include="User Controls\MyUserControl.Designer.cs">
       <DependentUpon>MyUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Pizza.cs" />
+    <Compile Include="PizzaRepo.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DynamicControls.resx">
+    <Compile Include="ShoppingCart.cs" />
+    <EmbeddedResource Include="Forms\DynamicControls.resx">
       <DependentUpon>DynamicControls.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MyUserControl.resx">
+    <EmbeddedResource Include="User Controls\MyUserControl.resx">
       <DependentUpon>MyUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

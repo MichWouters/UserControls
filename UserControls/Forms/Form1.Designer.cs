@@ -44,6 +44,7 @@ namespace UserControls
             this.myUserControl3.Location = new System.Drawing.Point(557, 12);
             this.myUserControl3.MyProductName = "ProductName";
             this.myUserControl3.Name = "myUserControl3";
+            this.myUserControl3.PizzaID = 3;
             this.myUserControl3.Price = "Price";
             this.myUserControl3.Size = new System.Drawing.Size(231, 335);
             this.myUserControl3.TabIndex = 2;
@@ -55,6 +56,7 @@ namespace UserControls
             this.myUserControl2.Location = new System.Drawing.Point(283, 12);
             this.myUserControl2.MyProductName = "My Product";
             this.myUserControl2.Name = "myUserControl2";
+            this.myUserControl2.PizzaID = 2;
             this.myUserControl2.Price = "5.45$";
             this.myUserControl2.Size = new System.Drawing.Size(231, 335);
             this.myUserControl2.TabIndex = 1;
@@ -66,6 +68,7 @@ namespace UserControls
             this.myUserControl1.Location = new System.Drawing.Point(12, 12);
             this.myUserControl1.MyProductName = "ProductName";
             this.myUserControl1.Name = "myUserControl1";
+            this.myUserControl1.PizzaID = 1;
             this.myUserControl1.Price = "Price";
             this.myUserControl1.Size = new System.Drawing.Size(231, 344);
             this.myUserControl1.TabIndex = 0;
@@ -77,6 +80,7 @@ namespace UserControls
             this.myUserControl4.Location = new System.Drawing.Point(12, 362);
             this.myUserControl4.MyProductName = "ProductName";
             this.myUserControl4.Name = "myUserControl4";
+            this.myUserControl4.PizzaID = 4;
             this.myUserControl4.Price = "Price";
             this.myUserControl4.Size = new System.Drawing.Size(224, 331);
             this.myUserControl4.TabIndex = 3;
@@ -88,6 +92,7 @@ namespace UserControls
             this.myUserControl5.Location = new System.Drawing.Point(283, 372);
             this.myUserControl5.MyProductName = "ProductName";
             this.myUserControl5.Name = "myUserControl5";
+            this.myUserControl5.PizzaID = 12;
             this.myUserControl5.Price = "Price";
             this.myUserControl5.Size = new System.Drawing.Size(224, 331);
             this.myUserControl5.TabIndex = 4;

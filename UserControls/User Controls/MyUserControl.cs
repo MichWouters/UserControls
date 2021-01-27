@@ -4,10 +4,17 @@ namespace UserControls
 {
     public partial class MyUserControl : UserControl
     {
+        private ShoppingCart _cart;
+        private IPizzaRepo _repo;
+
         public MyUserControl()
         {
             InitializeComponent();
+            _cart = ShoppingCart.GetShoppingCart();
+            _repo = new PizzaRepo();
         }
+
+        public int PizzaID { get; set; }
 
         public string MyProductName
         {
@@ -48,11 +55,10 @@ namespace UserControls
             }
         }
 
-        private void btnCart_Click(object sender, System.EventArgs e)
+        public void btnCart_Click(object sender, System.EventArgs e)
         {
-            var foo = (sender as MyUserControl).MyProductName;
-            MessageBox.Show("Hello");
+            var pizza = _repo.GetPizza(PizzaID);
+            _cart.AddProductToCart(pizza);
         }
-
     }
 }
