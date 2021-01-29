@@ -75,6 +75,7 @@ namespace UserControls
             this.txtComments.Name = "txtComments";
             this.txtComments.Size = new System.Drawing.Size(198, 20);
             this.txtComments.TabIndex = 4;
+            this.txtComments.TextChanged += new System.EventHandler(this.txtComments_TextChanged);
             // 
             // pictureBox1
             // 

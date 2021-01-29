@@ -48,6 +48,7 @@ namespace UserControls
             this.myUserControl3.Price = "Price";
             this.myUserControl3.Size = new System.Drawing.Size(231, 335);
             this.myUserControl3.TabIndex = 2;
+            this.myUserControl3.Load += new System.EventHandler(this.myUserControl3_Load);
             // 
             // myUserControl2
             // 

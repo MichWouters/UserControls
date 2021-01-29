@@ -1,17 +1,13 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace UserControls
 {
     public partial class MyUserControl : UserControl
     {
-        private ShoppingCart _cart;
-        private IPizzaRepo _repo;
-
         public MyUserControl()
         {
             InitializeComponent();
-            _cart = ShoppingCart.GetShoppingCart();
-            _repo = new PizzaRepo();
         }
 
         public int PizzaID { get; set; }
@@ -55,10 +51,24 @@ namespace UserControls
             }
         }
 
+        // Event Handler -> Raise an event from a child class
+        // Delegate field -> Accepts a method instead of a value or instance
+        public event EventHandler AddToCartButtonClicked;
+
+        protected virtual void OnAddToCartButtonClicked(EventArgs e)
+        {
+            AddToCartButtonClicked?.Invoke(this, e);
+        }
+
         public void btnCart_Click(object sender, System.EventArgs e)
         {
-            var pizza = _repo.GetPizza(PizzaID);
-            _cart.AddProductToCart(pizza);
+            // Pass child event to parent by raising it in an event which can be caught in parent
+            OnAddToCartButtonClicked(e);
+        }
+
+        private void txtComments_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -35,6 +35,18 @@ namespace UserControls
             // LAMBDA Expression. Return the first object in which the ID property equals user input
             var selectedPizza = allPizzas.Where(x => x.ID == id).FirstOrDefault();
 
+            // Lambda expression above is shorthand for code below
+            //IPizza pizza;
+            //foreach (IPizza item in allPizzas)
+            //{
+            //    if (item.ID == id)
+            //    {
+            //        pizza = item;
+            //    }
+            //}
+
+            //return pizza;
+
             return selectedPizza;
         }
     }
